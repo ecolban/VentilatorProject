@@ -10,7 +10,7 @@ public class Menu {
 	static final int startButtonWidth = 400;
 	static final int startButtonHeight = 200;
 	
-	
+	//hi
 	
 	public void display(PApplet app) {
 		app.fill(255);
