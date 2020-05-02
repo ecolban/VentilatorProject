@@ -41,7 +41,7 @@ public class App extends PApplet {
 			menu.update();
 		} else if (currentState == CHART) {
 			chart.update();
-		} 
+		}
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class App extends PApplet {
 			menu.onClick(mouseX, mouseY);
 		} else if (currentState == CHART) {
 			chart.onClick(mouseX, mouseY);
-		} 
+		}
 	}
 
 }
