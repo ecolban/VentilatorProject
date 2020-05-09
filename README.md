@@ -22,9 +22,10 @@ TBD...
 
 ## Further reading
 - [**World Health Organization:** Coronavirus disease (COVID-19) advice for the public](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public)
+- [**Center for Disease Control** Coronavirus Disease 2019 (COVID-19)](https://www.cdc.gov/coronavirus/2019-nCoV/index.html)
 - [**Our World in Data:** Coronavirus Pandemic (COVID-19)](https://ourworldindata.org/coronavirus)
-- [**Kurzgesagt:** The Coronavirus Explained & What You Should Do](https://www.youtube.com/watch?v=BtN-goy9VOY)
 - [**Internet Archive:** National Emergency Library](https://archive.org/details/nationalemergencylibrary)
+- [**Kurzgesagt:** The Coronavirus Explained & What You Should Do](https://www.youtube.com/watch?v=BtN-goy9VOY)
 
 ## License
 This project is under the [MIT License](https://github.com/Squash-16933/VentilatorProject/blob/master/LICENSE.md).
