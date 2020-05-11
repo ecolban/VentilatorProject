@@ -48,24 +48,32 @@ terminal for about one second. The reason is that, before the RPI is properly co
 connecting the RPI via the HAT to the stepper motor, edit the file `flask_api.py` and change:
 
 ```Python
-    # kit = MotorKit()
-    kit = MotorKitSimulator()
+# kit = MotorKit()
+kit = MotorKitSimulator()
 ```
 to:
 
 ```Python
-    kit = MotorKit()
-    # kit = MotorKitSimulator()
+kit = MotorKit()
+# kit = MotorKitSimulator()
 ```
 Stop and restart the server, and renter the above URL in a browser. This time the stepper motor should run for about a 
 second.
+
+### Adding arguments to the request
+
+It is also possible to add a query string to the URL:  
+`http://localhost:5000/testdrive?direction=BACKWARD&sleep=0.01&style=DOUBLE&steps=200`
+
+If an argument is omitted, a default value is used. The default values are
+
++ direction: `FORWARD`
++ sleep (sleep duration between each step): `0.01`
++ style (one of `SINGLE`, `DOUBLE`, `INTERLEAVE` and `MICROSTEP`): `SINGLE`
++ steps (the number of steps): `100`
 
 ## Controlling the step motor from the ventilator GUI
 
 In Java, send HTTP GET requests to the API. See the [javadoc](
 https://docs.oracle.com/javame/8.0/api/httpclient/api/index.html), or [other examples](
 https://mkyong.com/java/how-to-send-http-request-getpost-in-java/).
-
-## TODOs
-
-Identify a set of commands to send to the RPI and extend the API with those commands. 

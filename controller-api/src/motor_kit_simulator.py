@@ -1,7 +1,7 @@
 import time
 
 
-class stepper(object):
+class Stepper(object):
     FORWARD = "forward"
     BACKWARD = "backward"
     SINGLE = "single"
@@ -22,7 +22,7 @@ class stepper(object):
 
 class MotorKitSimulator(object):
 
-    def __init__(self, stepper1=stepper('stepper1'), stepper2=None):
+    def __init__(self, stepper1=Stepper('stepper1'), stepper2=None):
         self._stepper1 = stepper1
         self._stepper2 = stepper2
 
@@ -38,6 +38,6 @@ class MotorKitSimulator(object):
 if __name__ == "__main__":
     kit = MotorKitSimulator()
     for i in range(100):
-        kit.stepper1.onestep(direction=stepper.FORWARD, style=stepper.SINGLE)
+        kit.stepper1.onestep(direction=Stepper.FORWARD, style=Stepper.SINGLE)
         time.sleep(0.01)
     kit.stepper1.release()
