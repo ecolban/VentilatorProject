@@ -1,4 +1,4 @@
-#Installation
+# Installation
 
 Make sure you have python 3 (3.8 or later) installed on the raspberry pi (RPI) and make python 3 the default version of
 Python to run on the RPI. You can find how to do that by searching for instructions on the web. 
@@ -23,7 +23,7 @@ https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/ov
 https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/installing-software), it is not necessary
 to install all the dependencies because that will have been taken care of by `pipenv sync`.
 
-##Starting the server
+## Starting the server
 
 In a terminal window:
 
